@@ -109,7 +109,7 @@ export const register = (data) => async (dispatch) => {
 export const login = (data) => async (dispatch) => {
     dispatch(userSlice.actions.loginRequest());
     try {
-        const response = await axios.post("https://job-portal-backend-1tx9.onrender.com0/api/v1/user/login", data, {
+        const response = await axios.post("https://job-portal-backend-1tx9.onrender.com/api/v1/user/login", data, {
             withCredentials: true,
             headers: { "Content-Type": "application/json" }
         });
